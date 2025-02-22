@@ -1,0 +1,34 @@
+# Каталоги сборки и артефакты
+/build/
+/out/
+/bin/
+/target/
+/.gradle/
+/.idea/
+/*.iml
+
+# Директории и файлы настроек IDE
+.vscode/
+/*.sublime-workspace
+*.sublime-project
+
+# Файлы логов и отчётов
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Временные файлы ОС
+.DS_Store
+Thumbs.db
+
+# Временные файлы для Windows
+desktop.ini
+$RECYCLE.BIN/
+
+# Gradle Wrapper
+.gradle/wrapper/
+
+# Личные файлы пользователя
+*.jre/
+*.env

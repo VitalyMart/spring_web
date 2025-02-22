@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.7.10'
+    id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21) // Указание версии Java
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.spring.io/milestone' }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web' // Веб-приложение
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // Thymeleaf (если нужно)
+    
+    implementation 'org.springframework.boot:spring-boot-starter-security' // Spring Security (если нужно)
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test' // Тесты для Spring
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2' // JUnit 5
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2' // JUnit 5
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // Запуск JUnit
+}
+
+tasks.named('test') {
+    useJUnitPlatform() // Использование JUnit Platform
+}
