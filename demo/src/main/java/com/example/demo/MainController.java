@@ -8,12 +8,12 @@ public class MainController {
 
     @GetMapping("/")
     public String homePage() {
-        return "index";  // Это будет искать index.html в папке templates
+        return "index";  
     }
 
-    // Новый метод для страницы с информацией об авторе
+    
     @GetMapping("/author")
     public String authorPage() {
-        return "author";  // Это будет искать author.html в папке templates
+        return "author";  
     }
 }

@@ -22,7 +22,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web' // Веб-приложение
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf' // Thymeleaf (если нужно)
     
-    implementation 'org.springframework.boot:spring-boot-starter-security' // Spring Security (если нужно)
+   // implementation 'org.springframework.boot:spring-boot-starter-security' // Spring Security (если нужно)
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test' // Тесты для Spring
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2' // JUnit 5
